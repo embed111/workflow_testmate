@@ -23,11 +23,19 @@ version_notes: 创建中，已完成初始工作区与记忆骨架初始化。
 - `state/role-assets/TEST_CASE_CATALOG.md`
 - `state/role-assets/IMPACT_ANALYSIS_RULES.md`
 
+## Memory Governance
+- 经验入口以 `.codex/experience/index.md` 为准；正式工作前先读索引，再按其中“必读经验”顺序补充读取经验卡。
+- 记忆库规范以 `.codex/MEMORY.md` 为准；每轮正式工作前先按那份规范完成读链。
+- 若发生日切或月切，先执行 `.codex/MEMORY.md` 中的归档检查，再继续当前任务。
+- 需要补齐骨架或归档时，优先使用 `python scripts/manage_codex_memory.py repair-rollups --root .`。
+
 ## Startup Read Order
 1. `AGENTS.md`
-2. `.codex/SOUL.md`
-3. `.codex/USER.md`
-4. `.codex/MEMORY.md`
-5. `.codex/memory/全局记忆总览.md`
-6. `.codex/memory/YYYY-MM/记忆总览.md`
-7. `.codex/memory/YYYY-MM/YYYY-MM-DD.md`
+2. `.codex/experience/index.md`
+3. 读取 `.codex/experience/index.md` 中“必读经验”列出的经验文件
+4. `.codex/SOUL.md`
+5. `.codex/USER.md`
+6. `.codex/MEMORY.md`
+7. `.codex/memory/全局记忆总览.md`
+8. `.codex/memory/YYYY-MM/记忆总览.md`
+9. `.codex/memory/YYYY-MM/YYYY-MM-DD.md`
